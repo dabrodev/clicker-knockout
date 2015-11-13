@@ -3,6 +3,9 @@ var ClickViewModel = function() {
   this.clickIncrement = function() {
     this.clickNumber(this.clickNumber() + 1);
   };
+  this.clickReset = function() {
+    this.clickNumber(0);
+  };
 };
 
 ko.applyBindings(new ClickViewModel());
